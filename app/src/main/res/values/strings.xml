@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General Strings -->
+    <string name="app_name">PowerTasks</string>
+    <string name="action_settings">Settings</string>
+    <!-- General Strings -->
+
+    <!-- Drawer Strings -->
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <!-- End Drawer Strings -->
+
+    <string name="title_activity_config">Configuration</string>
+
+    <!-- Config Strings -->
+    <string name="tvCalendar">Agregar/Actualizar Horario</string>
+    <!-- End Config Strings-->
+
+    <!-- Notification Strings -->
+    <string name="tvNotif">Notificaciones</string>
+    <string name="allTime">Todo el Tiempo</string>
+    <string name="home">Solo en Casa</string>
+    <!-- End Notification Strings -->
+
+    <!-- Home Network Strings -->
+    <string name="nwHome">Agregar Red Principal</string>
+    <!-- End Home Network Strings-->
+
+    <!-- Action Save Config -->
+    <string name="a_saveConfig">Guardar</string>
+    <!-- End Action Save Config-->
+
+    <!-- Activity Network Strings -->
+    <string name="title_activity_network">Network</string>
+    <string name="search_network">Buscar Redes</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

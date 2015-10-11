@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itson.mx.navigationtest" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="itson.mx.activities.Configuracion"
+            android:label="@string/title_activity_config"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+
+        <receiver
+            android:name="itson.mx.receiver.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+                <action android:name="action.scan.wifi" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="itson.mx.service.MyService" />
+
+        <activity
+            android:name="itson.mx.activities.Network"
+            android:label="@string/title_activity_network" >
+        </activity>
+    </application>
+
+</manifest>

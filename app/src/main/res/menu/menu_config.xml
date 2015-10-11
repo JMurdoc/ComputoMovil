@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="itson.mx.activities.Configuracion">
+
+    <item
+        android:id="@+id/action_save"
+        android:title="@string/a_saveConfig"
+        android:icon="@drawable/ic_content_save"
+        android:showAsAction="always"
+        />
+
+
+</menu>

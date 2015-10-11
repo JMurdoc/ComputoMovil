@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="itson.mx.activities.Configuracion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/panel_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ivCalendario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar"/>
+
+                <TextView
+                    android:id="@+id/tvCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tvCalendar"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/ivCalendario"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/sp1"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/panel_calendar"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+            <RelativeLayout
+                android:id="@+id/panel_notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/sp1">
+
+                <TextView
+                    android:id="@+id/notif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvNotif"
+                    android:layout_marginLeft="30dp"/>
+
+                <Switch
+                    android:id="@+id/swFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/notif"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="45dp"
+                    android:text="@string/allTime"
+                    android:checked="true"
+                    />
+
+                <Switch
+                    android:id="@+id/swHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/swFull"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="@string/home"
+                    android:checked="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/sp2"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/panel_notif"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+            <RelativeLayout
+                android:id="@+id/panel_hogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/sp2"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ivConexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hogar"/>
+
+                <TextView
+                    android:id="@+id/tvConexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/nwHome"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/ivConexion"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
